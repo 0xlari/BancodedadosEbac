@@ -102,12 +102,24 @@ int deletar() //função que pode ser chamada a qualquer momento
 
 
 int main()
-   {
+{
      int opcao=0; //Definindo variavies
 	 int laco=1;
-	
-	     for (laco=1;laco=1;)
+	 char senhadigitada[10]="a";
+	 int comparacao;
+	 
+	 printf("### Cartório da EBAC ###\n\n");
+	 printf("Login de administrador!\n\n Digite a sua senha:\n");
+	 scanf("%s",senhadigitada);
+	 
+	 comparacao = strcmp(senhadigitada, "admin");
+	 
+	 if (comparacao == 0)
 	 {
+	   system ("cls");
+	   
+	     for (laco=1;laco=1;)
+	    {
 	       system("cls");
 	
 	       setlocale(LC_ALL,"Portuguese"); //lingua que será utilizada
@@ -151,6 +163,11 @@ int main()
 		     system("pause");
 			 break; 	// fim das escolhas
 	       }
-	   }     
-   }   
+	    }  
+	   
+    }
+	   else
+	   printf("Senha incorreta!"); 
+     
+}   
 
