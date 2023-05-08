@@ -120,7 +120,7 @@ int main()
 	     printf("\t1 - Registrar nomes\n");
 	     printf("\t3 - Deletar nomes\n\n"); 
 	     printf("\t2 - Consultar nomes\n");
-	     printf("\t2 - Sair do sistema!\n");
+	     printf("\t4 - Sair do sistema!\n");
 	     printf("opção:"); //Fim do menu
 	
 	     scanf("%d", &opcao); //armazenamento do usuario
@@ -130,20 +130,20 @@ int main()
 	         switch(opcao) //opções que vão aparecer para o usuario
 	       {
 	       	 case 1: 
-	       	 registro();
+	       	  registro();
 		     break;
 		     
 		     case 2:
-			 consultar();
+			  consultar();
 	         break;
 	         
 	         case 3:
-	         deletar();
+	          deletar();
 			 break;
 			 
 			 case 4;
-			 printf("Obrigado po utilizar nosso sistema!\n");
-			 return
+			  printf("Obrigado po utilizar nosso sistema!\n");
+			  return
 			 break;
 			 
 			 
