@@ -67,7 +67,7 @@ int consultar() //função que pode ser chamada a qualquer momento
 	
 	if(file == NULL)
 	{
-		printf("Esse usuario não existe./n");
+		printf("\nEsse usuario não existe.\n\n");
 	}
 	
 	while(fgets(conteudo, 200, file) != NULL)
@@ -118,7 +118,7 @@ int main()
 	     printf("Escolha a opção desejada do menu:\n\n");
 	
 	     printf("\t1 - Registrar nomes\n");
-	     printf("\t3 - Deletar nomes\n\n"); 
+	     printf("\t3 - Deletar nomes\n"); 
 	     printf("\t2 - Consultar nomes\n");
 	     printf("\t4 - Sair do sistema!\n");
 	     printf("opção:"); //Fim do menu
@@ -141,17 +141,11 @@ int main()
 	          deletar();
 			 break;
 			 
-			 case 4;
-			  printf("Obrigado po utilizar nosso sistema!\n");
-			  return
+			 case 4:
+			  printf("Obrigado por utilizar nosso sistema!\n");
+			  return;
 			 break;
-			 
-			 
-			 
-			 
-			 
-
-			 
+			 			 
 			 default: // aparecerra quando não for nenhuma das anteriores
 			 printf("Essa opção não esta disponivél!\n");
 		     system("pause");
