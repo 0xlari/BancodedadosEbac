@@ -1,0 +1,12 @@
+<html>
+    <head> 
+        <title>- Registro de Nomes</title> 
+    </head>
+
+    <body>
+     <h1>Olá, digite seus dados para acessar a tela:</h1>
+     <h2>Email:</h2>
+     <h2>Senha:</h2>
+     <h1>Entrar</h1>
+    </body>
+</html>    
